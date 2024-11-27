@@ -39,5 +39,11 @@ h1 {
 
   div.container {
     display:   flex;
+    overflow-x: auto;
+  }
+
+  div {
     overflow-x: scroll;
+    wahite-sapce: nowrap;
+
   }
