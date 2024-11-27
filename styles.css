@@ -18,9 +18,7 @@ section {
     display: flex;
     justify-content: center;
     color: rgb(252, 185, 0)
-    overflow-x: hidden;
-    overflow-y: ::-webkit-scrollbar;
-    white-space: nowrap;
+
 }
 
 .chamada-texto {
@@ -36,4 +34,11 @@ h1 {
   }
   img {
     height: 300px;
+  }
+
+  div{
+    overflow-x: hidden;
+    overflow-y: ::-webkit-scrollbar;
+    white-space: nowrap;
+}
   }
