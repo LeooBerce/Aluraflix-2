@@ -1,6 +1,6 @@
 body {
     color: rgb(252, 185, 0)
-    background: rgb(252, 185, 0);
+    background rgb(252, 185, 0);
     margin: 0px;
     font-family: "Protest Revolution", sans-serif;
 
@@ -37,54 +37,7 @@ h1 {
     height: 300px;
   }
 
-
-::-webkit-scrollbar {
-  width: $scrollBarHeight;
-  height: $scrollBarHeight;
-}
-
-::-webkit-scrollbar-button {
-  width: $scrollBarHeight;
-  height: $scrollBarHeight;
-}
-
-div {
-  box-sizing: border-box;
-}
-
-.horizontal-scroll-wrapper {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: calc({$finalHeight} + #{$scrollBarHeight});
-  max-height: $finalWidth;
-  margin: 0;
-  padding-top: $scrollBarHeight;
-  background: #abc;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-$finalHeight);
-  transform-origin: right top;
-  & > div {
-    display: block;
-    padding: 5px;
-    background: #cab;
-    transform: rotate(90deg);
-    transform-origin: right top;
+  div.container {
+    display:   flex;
+    overflow-x: auto;
   }
-}
-
-.squares {
-  padding: $finalHeight 0 0 0;
-  & > div {
-    width: $finalHeight;
-    height: $finalHeight;
-    margin: 10px 0;
-  }
-}
-  
-  
-
-  
-  
